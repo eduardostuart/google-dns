@@ -1,0 +1,37 @@
+{
+  "name": "google-dns",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "repository": "eduardostuart/google-dns",
+  "author": {
+    "name": "Eduardo Stuart",
+    "email": "hi@s.tuart.me",
+    "url": "s.tuart.me"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "google",
+    "dns"
+  ],
+  "xo": {
+    "esnext": true,
+    "space": true
+  },
+  "dependencies": {
+    "got": "^7.1.0"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "nock": "^9.0.24",
+    "xo": "^0.18.2"
+  }
+}
