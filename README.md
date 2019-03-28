@@ -8,8 +8,6 @@ A wrapper for [Google public DNS](https://dns.google.com).
 
 ## [DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/dns-over-https)
 
-> Google Public DNS offers DNSSEC-validating resolution over an encrypted HTTPS connection using
-> a web-friendly API that does not require browser or OS configuration or installing an extension.
 > DNS-over-HTTPS greatly enhances privacy and security between a client and a recursive resolver,
 > and complements DNSSEC to provide end-to-end authenticated DNS lookups.
 
