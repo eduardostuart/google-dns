@@ -1,19 +1,20 @@
 {
   "name": "google-dns",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "A wrapper for Google public DNS",
   "license": "MIT",
   "repository": "eduardostuart/google-dns",
   "author": {
     "name": "Eduardo Stuart",
     "email": "hi@s.tuart.me",
-    "url": "s.tuart.me"
+    "url": "s.tuart.dev"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=10"
   },
   "scripts": {
-    "test": "xo && ava"
+    "lint": "eslint index.js test.js",
+    "test": "ava"
   },
   "files": [
     "index.js"
@@ -22,16 +23,14 @@
     "google",
     "dns"
   ],
-  "xo": {
-    "esnext": true,
-    "space": true
-  },
   "dependencies": {
-    "got": "^7.1.0"
+    "got": "^9.6.0"
   },
   "devDependencies": {
-    "ava": "^0.22.0",
-    "nock": "^9.0.24",
-    "xo": "^0.18.2"
+    "ava": "^1.4.1",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "nock": "^10.0.6"
   }
 }

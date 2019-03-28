@@ -1,15 +1,13 @@
-'use strict';
 const got = require('got');
 
-module.exports = (url, type) => {
-  if (!type) {
-    type = 'any';
+module.exports = async (domain, type = 'any') => {
+  if (!domain || typeof domain !== 'string') {
+    throw Error('Invalid domain');
   }
 
-  if (typeof url !== 'string') {
-    return Promise.reject(new Error('URL required'));
-  }
+  const { body } = await got(`https://dns.google.com/resolve?name=${domain}&type=${type}`, {
+    json: true,
+  });
 
-  return got(`https://dns.google.com/resolve?name=${url}&type=${type}`)
-    .then(res => res.body);
+  return body;
 };
