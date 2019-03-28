@@ -22,7 +22,7 @@ npm i google-dns --save
 # Usage
 
 ```js
-import dns from 'google-dns'
+const dns = require('google-dns')
 
 (async () => {
   const response = await dns('google.com'/*, any */)
