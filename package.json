@@ -13,7 +13,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "lint": "eslint index.js test.js",
+    "lint": "eslint index.js test.js --fix",
     "test": "ava"
   },
   "files": [
